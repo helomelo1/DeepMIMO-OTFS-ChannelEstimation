@@ -44,7 +44,7 @@ TAU_IDX = np.round(EVA_DELAYS_SEC / TAU_R).astype(int).clip(0, M_TAU - 1)
 N_SAMPLES = 100_000
 BATCH_SIZE = 1000               # large batches for vectorized speed
 SNR_DB = 10.0
-SAVE_PATH = "dataset_tf_3.npz"
+SAVE_PATH = "dataset_tf.npz"
 
 
 def build_sensing_matrix(seed=42):
